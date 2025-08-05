@@ -61,7 +61,7 @@ const Footer: React.FC = () => {
             <a className="ml-3 text-gray-300 hover:text-white transition-colors" href="https://twitter.com" target="_blank" rel="noopener noreferrer">
               {SocialIcons.Twitter}
             </a>
-            <a className="ml-3 text-gray-300 hover:text-white transition-colors" href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+            <a className="ml-3 text-gray-300 hover:text-white transition-colors" href="https://instagram.com/mealvilla" target="_blank" rel="noopener noreferrer">
               {SocialIcons.Instagram}
             </a>
           </span>

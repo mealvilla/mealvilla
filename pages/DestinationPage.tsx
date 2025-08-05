@@ -1,3 +1,4 @@
+
 import React, { useState, useMemo, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { properties, destinations } from '../data/mockData';
@@ -10,7 +11,7 @@ const DestinationPage: React.FC = () => {
   const { name } = useParams<{ name: string }>();
   
   const [ratingFilter, setRatingFilter] = useState<number>(0);
-  const [priceFilter, setPriceFilter] = useState<number>(1000);
+  const [priceFilter, setPriceFilter] = useState<number>(80000);
   const [typeFilters, setTypeFilters] = useState<Set<PropertyType>>(new Set());
   const [amenityFilters, setAmenityFilters] = useState<Set<Amenity>>(new Set());
   const [sortOrder, setSortOrder] = useState<'price_asc' | 'price_desc' | 'rating_desc'>('rating_desc');
@@ -107,8 +108,8 @@ const DestinationPage: React.FC = () => {
               </div>
               {/* Price Filter */}
               <div className="mb-6">
-                <label htmlFor="price" className="block text-black font-semibold mb-2">Max Price: <span className="text-primary">${priceFilter}</span></label>
-                <input type="range" id="price" min="50" max="1000" step="10" value={priceFilter} onChange={e => setPriceFilter(Number(e.target.value))} className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-primary" />
+                <label htmlFor="price" className="block text-black font-semibold mb-2">Max Price: <span className="text-primary">₹{priceFilter.toLocaleString('en-IN')}</span></label>
+                <input type="range" id="price" min="4000" max="80000" step="1000" value={priceFilter} onChange={e => setPriceFilter(Number(e.target.value))} className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-primary" />
               </div>
               {/* Type Filter */}
               <div className="mb-6">

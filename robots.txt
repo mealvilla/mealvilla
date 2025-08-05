@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /
+
+# Optional: explicitly prevent indexing (not all bots respect this)
+Noindex: /
