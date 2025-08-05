@@ -1,0 +1,20 @@
+
+import React from 'react';
+import { Amenity } from './types';
+
+export const AmenityIcons: Record<Amenity, React.ReactNode> = {
+  [Amenity.WiFi]: <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM4.332 8.727a6.002 6.002 0 019.336 0M6.5 10.999a4 4 0 017 0M8.667 13.273a2 2 0 012.666 0" clipRule="evenodd" /></svg>,
+  [Amenity.Pool]: <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2.586l.293.293a1 1 0 001.414 0l7-7a1 1 0 000-1.414l-7-7z" /></svg>,
+  [Amenity.AirConditioning]: <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path fillRule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clipRule="evenodd" /></svg>,
+  [Amenity.Parking]: <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path fillRule="evenodd" d="M18 8a6 6 0 01-7.743 5.743L10 14l-1 1-1 1H6v2H2v-4l4.257-4.257A6 6 0 1118 8zm-6-4a4 4 0 100 8 4 4 0 000-8z" clipRule="evenodd" /></svg>,
+  [Amenity.Gym]: <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM7 9a1 1 0 100-2 1 1 0 000 2zm7-1a1 1 0 11-2 0 1 1 0 012 0zm-7.536 5.879a1 1 0 011.415 0L10 14.586l1.121-1.122a1 1 0 111.415 1.415L11.414 16l1.122 1.121a1 1 0 01-1.415 1.415L10 17.414l-1.121 1.122a1 1 0 01-1.415-1.415L8.586 16 7.464 14.879a1 1 0 010-1.415z" clipRule="evenodd" /></svg>,
+  [Amenity.Spa]: <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4z" /><path d="M3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z" /></svg>,
+  [Amenity.Restaurant]: <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path d="M11 3a1 1 0 10-2 0v1a1 1 0 102 0V3zM15.657 5.757a1 1 0 00-1.414-1.414l-.707.707a1 1 0 001.414 1.414l.707-.707zM4.343 5.757a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414l.707.707zM1 10a1 1 0 011-1h16a1 1 0 110 2H2a1 1 0 01-1-1zM4 16a1 1 0 011-1h8a1 1 0 110 2H5a1 1 0 01-1-1z" /></svg>,
+  [Amenity.PetFriendly]: <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path d="M10 3.5a1.5 1.5 0 013 0V4a1 1 0 011 1v3.5a1.5 1.5 0 01-3 0V7a1 1 0 01-1-1V4.5a1.5 1.5 0 011.5-1.5zM6.5 15.5a1.5 1.5 0 013 0V16a1 1 0 011 1v.5a1.5 1.5 0 01-3 0v-.5a1 1 0 01-1-1v-1.5z" /><path d="M8.5 7a1.5 1.5 0 00-3 0v1a1 1 0 00-1 1v3.5a1.5 1.5 0 003 0V12a1 1 0 001-1V7.5a1.5 1.5 0 00-1.5-1.5z" /><path d="M12 9.5a1.5 1.5 0 013 0V10a1 1 0 011 1v3.5a1.5 1.5 0 01-3 0v-.5a1 1 0 01-1-1v-3.5z" /></svg>,
+};
+
+export const SocialIcons = {
+  Facebook: <svg fill="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-5 h-5" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path></svg>,
+  Twitter: <svg fill="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-5 h-5" viewBox="0 0 24 24"><path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path></svg>,
+  Instagram: <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-5 h-5" viewBox="0 0 24 24"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path></svg>,
+};
