@@ -36,6 +36,9 @@ const Header: React.FC = () => {
           </div>
           <NavLink to="/about" className={({ isActive }) => `${navLinkClasses} ${isActive ? activeLinkClasses : ''}`}>About</NavLink>
           <NavLink to="/contact" className={({ isActive }) => `${navLinkClasses} ${isActive ? activeLinkClasses : ''}`}>Contact</NavLink>
+          <Link to="/list-your-property" className="ml-4 bg-accent text-white font-bold py-2 px-4 rounded-full text-sm hover:bg-orange-700 transition-all duration-300 transform hover:scale-105">
+            List Your Property
+          </Link>
         </div>
         <div className="lg:hidden">
           <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="text-white focus:outline-none">
@@ -71,6 +74,9 @@ const Header: React.FC = () => {
           </div>
           <NavLink to="/about" className={({ isActive }) => `${navLinkClasses} ${isActive ? activeLinkClasses : ''}`} onClick={() => setIsMenuOpen(false)}>About</NavLink>
           <NavLink to="/contact" className={({ isActive }) => `${navLinkClasses} ${isActive ? activeLinkClasses : ''}`} onClick={() => setIsMenuOpen(false)}>Contact</NavLink>
+          <Link to="/list-your-property" className="block w-full text-center bg-accent text-white font-bold py-2 px-4 rounded-full hover:bg-orange-700 transition-colors duration-300" onClick={() => setIsMenuOpen(false)}>
+              List Your Property
+            </Link>
         </div>
       )}
     </header>

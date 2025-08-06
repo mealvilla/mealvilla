@@ -11,6 +11,7 @@ import PrivacyPolicyPage from '../pages/PrivacyPolicyPage';
 import TermsOfServicePage from '../pages/TermsOfServicePage';
 import NotFoundPage from '../pages/NotFoundPage';
 import AllPropertiesPage from '../pages/AllPropertiesPage';
+import ListPropertyPage from '../pages/ListPropertyPage';
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -38,6 +39,7 @@ const App: React.FC = () => {
             <Route path="/contact" element={<ContactPage />} />
             <Route path="/privacy" element={<PrivacyPolicyPage />} />
             <Route path="/terms" element={<TermsOfServicePage />} />
+            <Route path="/list-your-property" element={<ListPropertyPage />} />
             <Route path="*" element={<NotFoundPage />} />
           </Routes>
         </main>
