@@ -17,9 +17,9 @@ const HomePage: React.FC = () => {
         <div className="relative z-10 text-white px-4">
           <h1 className="text-4xl md:text-6xl font-extrabold font-serif mb-4 drop-shadow-lg">Find Your Perfect Stay</h1>
           <p className="text-lg md:text-2xl mb-8 font-light max-w-2xl mx-auto drop-shadow-md">Discover curated hotels, resorts, villas, and homestays for an unforgettable experience.</p>
-          <a href="#featured-properties" className="bg-accent text-white font-bold py-3 px-8 rounded-full text-lg hover:bg-orange-700 transition-all duration-300 transform hover:scale-105">
+          <Link to="/properties" className="bg-accent text-white font-bold py-3 px-8 rounded-full text-lg hover:bg-orange-700 transition-all duration-300 transform hover:scale-105">
             Explore Now
-          </a>
+          </Link>
         </div>
       </section>
 

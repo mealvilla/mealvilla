@@ -12,7 +12,7 @@ export const properties: Property[] = [
     pricePerNight: 28000,
     description: 'Experience unparalleled luxury and service at the heart of Goa. Our hotel offers world-class amenities and breathtaking ocean views, making it the perfect escape.',
     amenities: [Amenity.WiFi, Amenity.Pool, Amenity.Spa, Amenity.Restaurant, Amenity.Gym],
-    images: ['https://picsum.photos/seed/luxpalace1/1200/800', 'https://picsum.photos/seed/luxpalace2/1200/800', 'https://picsum.photos/seed/luxpalace3/1200/800'],
+    images: ['https://ik.imagekit.io/utz2qnv8b/luxury-palace-hotel.webp?tr=w-1200,h-800,fo-auto', 'https://picsum.photos/seed/luxpalace2/1200/800'],
     thumbnail: 'https://picsum.photos/seed/luxpalace-thumb/400/300',
     contactPhone: '911234567890'
   },
