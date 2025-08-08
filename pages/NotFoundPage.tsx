@@ -14,7 +14,7 @@ const NotFoundPage: React.FC = () => {
           Page Not Found
         </div>
         <p className="text-2xl md:text-3xl font-bold text-black mt-4">
-          Oops! The page you’re looking for doesn’t exist.
+          Oops! The page you're looking for doesn't exist.
         </p>
         <p className="text-text-muted mt-4 mb-8">
           You may have mistyped the address or the page may have moved.

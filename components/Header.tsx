@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import { destinations } from '../data/mockData';
@@ -74,9 +73,11 @@ const Header: React.FC = () => {
           </div>
           <NavLink to="/about" className={({ isActive }) => `${navLinkClasses} ${isActive ? activeLinkClasses : ''}`} onClick={() => setIsMenuOpen(false)}>About</NavLink>
           <NavLink to="/contact" className={({ isActive }) => `${navLinkClasses} ${isActive ? activeLinkClasses : ''}`} onClick={() => setIsMenuOpen(false)}>Contact</NavLink>
-          <Link to="/list-your-property" className="block w-full text-center bg-accent text-white font-bold py-2 px-4 rounded-full hover:bg-orange-700 transition-colors duration-300" onClick={() => setIsMenuOpen(false)}>
+          <div className="p-4 border-t border-primary-dark/50 mt-2">
+            <Link to="/list-your-property" className="block w-full text-center bg-accent text-white font-bold py-2 px-4 rounded-full hover:bg-orange-700 transition-colors duration-300" onClick={() => setIsMenuOpen(false)}>
               List Your Property
             </Link>
+          </div>
         </div>
       )}
     </header>

@@ -1,0 +1,31 @@
+import React, { useState } from 'react';
+import { Property } from '../types';
+import ShareModal from './ShareModal';
+
+interface ShareButtonProps {
+    property: Property;
+}
+
+const ShareButton: React.FC<ShareButtonProps> = ({ property }) => {
+    const [isModalOpen, setIsModalOpen] = useState(false);
+
+    return (
+        <>
+            <button
+                onClick={() => setIsModalOpen(true)}
+                className="flex items-center gap-2 px-4 py-2 rounded-lg hover:bg-bg-light transition-colors text-black font-semibold"
+                aria-label="Share this property"
+            >
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M4 12v8a2 2 0 002 2h12a2 2 0 002-2v-8m-4-6l-4-4m0 0L8 8m4-4v12" />
+                </svg>
+                <span>Share</span>
+            </button>
+            {isModalOpen && (
+                <ShareModal property={property} onClose={() => setIsModalOpen(false)} />
+            )}
+        </>
+    );
+};
+
+export default ShareButton;

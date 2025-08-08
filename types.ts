@@ -1,9 +1,9 @@
-
 export enum PropertyType {
   Hotel = 'hotel',
   Resort = 'resort',
   Villa = 'villa',
   Homestay = 'homestay',
+  Apartment = 'apartment',
 }
 
 export enum Amenity {
@@ -25,11 +25,15 @@ export interface Property {
   location: string;
   destination: string;
   pricePerNight: number;
+  priceSuffix?: string;
   description: string;
   amenities: Amenity[];
   images: string[];
   thumbnail: string;
   contactPhone: string;
+  whatsappMessage?: string;
+  instagramReelEmbed?: string;
+  mapEmbedUrl?: string;
 }
 
 export interface Testimonial {

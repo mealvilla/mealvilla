@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Property, PropertyType } from '../types';
@@ -13,6 +12,7 @@ const typeColors: Record<PropertyType, string> = {
   [PropertyType.Resort]: 'bg-teal-500',
   [PropertyType.Villa]: 'bg-purple-500',
   [PropertyType.Homestay]: 'bg-orange-500',
+  [PropertyType.Apartment]: 'bg-green-500',
 };
 
 const PropertyCard: React.FC<PropertyCardProps> = ({ property }) => {
@@ -35,7 +35,7 @@ const PropertyCard: React.FC<PropertyCardProps> = ({ property }) => {
         </div>
         <p className="text-text-muted text-sm flex-grow">{property.description.substring(0, 100)}...</p>
         <div className="mt-auto pt-4 flex justify-between items-center">
-          <p className="text-xl font-bold text-accent">₹{property.pricePerNight.toLocaleString('en-IN')}<span className="text-sm font-normal text-text-muted">/night</span></p>
+          <p className="text-xl font-bold text-accent">₹{property.pricePerNight.toLocaleString('en-IN')}<span className="text-sm font-normal text-text-muted">/night{property.priceSuffix ? ` ${property.priceSuffix}` : ''}</span></p>
           <Link to={`/property/${property.type}/${property.id}`} className="bg-primary text-white font-bold py-2 px-4 rounded hover:bg-primary-dark transition-colors duration-300">
             Details
           </Link>
